@@ -180,8 +180,6 @@ body{
 
 /* main */
 
-/* home pag */
-
 /* secao apresentacao */
 
 .secao {
@@ -192,6 +190,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 0px 10%;
+    background-image: linear-gradient(180deg, rgba(126,20,20,1) 0%, rgba(253,29,29,1) 5%, rgba(252,176,69,1) 100%);
 }
 
 .home-text{
@@ -202,6 +201,7 @@ body{
     font-size: 1.5rem;
     color: var(--red);
     margin-bottom: 1rem;
+    color: white;
 }
 
 .home-text h1{
@@ -217,7 +217,7 @@ body{
 
 #home-btn{
     padding: 15px 45px;
-    background: var(--red);
+    background: #ff0000;
     color: var(--white);
     border-radius: 10px;
     font-weight: 700;
@@ -226,8 +226,8 @@ body{
 
 #home-btn:hover{
     background: var(--white);
-    box-shadow: 0 2px 15px var(--red);
-    border: 1px solid var(--red);
+    box-shadow: 0 2px 15px rgb(255, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
     color: var(--red);
 
 }
@@ -241,6 +241,12 @@ body{
 
 
 /* secao beneficios da alimentacao */
+
+#secao-dois{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: linear-gradient(180deg, rgba(252,176,69,1) 0%, rgba(239,253,29,1) 5%, rgba(102,252,69,1) 100%);
+}
 
 #btn-fale-conosco{
     background-color: #009C08;
@@ -257,36 +263,13 @@ body{
     font-size: 1.2rem;
 }
 
-#lista-elementos-rosa{
+#lista-elementos{
     width: 100%;
-    height: 200px;
-    background-image: url(./imagens/Group\ 7.png);
-    background-color: #FFDEDE;
+    height: 300px;
     background-size: 45px;
     border-radius: 1%;
     box-shadow: 1px 2px 1px 2px rgba(0, 0, 0, 0.1);
 }
-
-#lista-elementos-azul{
-    width: 100%;
-    height: 240px;
-    background-image: url(./imagens/dog-paw-hand-drawn-7d13a6\ 1.png);
-    background-color: #DEF0FF;
-    background-size: 20%;
-    border-radius: 1%;
-    box-shadow: 1px 2px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-#lista-elementos-amarelo{
-    width: 100%;
-    height: 300px;
-    background-image: url(./imagens/bn-1.png);
-    background-color: #FFF6DE;
-    background-size: 25%;
-    border-radius: 1%;
-    box-shadow: 1px 2px 1px 2px rgba(0, 0, 0, 0.2);
-}
-
 
 #beneficios-slide{
     background: white;
@@ -336,6 +319,7 @@ body{
 #grid-fooding-question {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-image: linear-gradient(180deg, rgba(102,252,69,1) 0%, rgba(29,253,150,1) 5%, rgba(69,151,252,1) 100%);
 }
 
 .foodimg{
@@ -399,31 +383,7 @@ body{
     margin: 2px 0 0 2px;
 }
 
-/* secao midia */
 
-#na-midia{
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5px;
-    margin-top: 60px;
-    gap: 20px;
-}
-
-.midias{
-    display: flex;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.videos{
-    width: 433px;
-    height: 278px;
-    border-radius: 11px;
-    border: 0px none rgb(0, 0, 0);
-}
 
 /* cards de transicao alimentar */
 
@@ -434,6 +394,7 @@ body{
     justify-content: center;
     min-height: 60vh;
     margin-bottom: 40px;
+    background-image: linear-gradient(180deg, rgba(69,151,252,1) 0%, rgba(139,29,253,1) 5%, rgba(239,69,252,1) 100%);
 }
 
 #cards{
@@ -496,6 +457,33 @@ body{
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.35);
 }
 
+/* secao midia */
+
+#na-midia{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 60px;
+    gap: 20px;
+}
+
+.midias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+    text-align: center;
+    background-image: linear-gradient(180deg, rgba(239,69,252,1), rgba(253,29,156,1) 5%, rgba(252,69,69,1) 100%);
+}
+
+.videos{
+    width: 433px;
+    height: 278px;
+    border-radius: 11px;
+    border: 0px none rgb(0, 0, 0);
+}
+
 /* secao testimonial */
 
 #testimonials{
@@ -504,6 +492,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 48px;
+    background-image: linear-gradient(180deg, rgba(252,69,69,1) 0%, rgba(253,29,29,1) 5%, rgba(126,20,20,1) 100%);
 }
 
 #testimonial_chef{
@@ -512,6 +501,7 @@ body{
 }
 
 .section-title{
+    margin-bottom: 10px;
     text-align: center;
     font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

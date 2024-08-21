@@ -175,7 +175,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35) 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
 #footer-2{
@@ -206,3 +206,4 @@ address p{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
+

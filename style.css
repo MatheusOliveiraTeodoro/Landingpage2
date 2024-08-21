@@ -26,57 +26,183 @@ body{
 
 /* header*/
 
-#navigation{
+#cabecalho{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 110px;
-    box-shadow: 0 0.1rem 0.5rem #ccc;
+    box-shadow: 0 0.2rem 0.5rem #ccc;
     width: 100%;
-    background: var(--white);
+    background: #7e1414;
     transition: all 0.5s;
     position: fixed;
     z-index: 3;
 }
 
-#navigation ul{
+#cabecalho ul{
     display: flex;
     align-items: center;
     gap: 5rem;
 }
 
-#navigation ul li a{
-    color: var(--dark);
-    font-size: 17px;
-    font-weight: 500;
+#cabecalho ul li a{
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 700;
     transition: all 0.2s;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-#navigation ul li a:hover{
-    color: var(--red);
+#cabecalho ul li a:hover{
+    color: #E9DBA0;
 }
 
-#navigation i{
-    cursor: pointer;
-    font-size: 1.5rem;
+#logo-header{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    text-align: left;
+    
 }
 
-.menu{
-    cursor: pointer;
-    display: none;
+#wpp{
+    background-color: rgb(8, 207, 8);
+    color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+    width: 35px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10%;
 }
 
-.menu .bar{
+#instagram{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+    width: 35px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10%;
+}
+
+#facebook{
+    color: white;
+    background-color: rgb(37, 37, 253);
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+    width: 35px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10%;
+}
+
+/* botao fixado do whatsapp*/
+
+#whatsapp-fixado #wpp-fixado{
+    position: fixed;
+    transition: all 0.5s ease;
+    background-color: #25d366;
     display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 3px;
-    background: var(--dark);
-    margin: 5px auto;
-    transition: all 0.3s;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    border-radius: 50px;
+    border-right: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    bottom: 20px;
+    right: 20px;
+    border: 0;
+    z-index: 9999;
+    width: 46px;
+    height: 42px;
+    line-height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.menu .bar:nth-child(1),
-.menu .bar:nth-child(3){
-    background: var(--dark);
+#whatsapp-fixado #wpp-fixado::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #25d366;
+    border-radius: 50%;
+    -webkit-animation:pulse-border 1500ms ease-out infinite;
+    animation:pulse-border 1500ms ease-out infinite;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+}
+
+#whatsapp-fixado #wpp-fixado:focus{
+    border: none;
+    outline: none;
+}
+
+@keyframes pulse-border {
+
+    0%{transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1); opacity:50%;}
+    100%{transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5); opacity:50%;}
+}
+
+/* footer */
+
+.footer img{
+    width: 20%;
+}
+
+.footer-1 .logo img{
+    width: 100px;
+}
+
+.footer{
+    border-top: 1px solid white;
+    background-color: #7e1414;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35) 
+}
+
+#footer-2{
+    text-align: center;
+}
+
+#footer-2 h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--orange);   
+    text-decoration: dashed;
+}
+
+#footer-2 img{
+    width: 100px;
+    margin-bottom: 5px;
+}
+
+.bfp-site{
+    color: black;
+}
+
+address p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(212, 212, 212);
+}
+
+#footer-2 h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }

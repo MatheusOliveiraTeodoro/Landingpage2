@@ -676,3 +676,11 @@ address p{
 }
 
 */
+
+#tabela-comida-peso{
+    display: flex;
+}
+
+.foto-tabela{
+    width: 100%;
+}

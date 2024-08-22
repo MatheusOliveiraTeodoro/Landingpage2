@@ -76,6 +76,7 @@ body{
     align-items: center;
     display: flex;
     border-radius: 10%;
+    transition: all 0.5s;
 }
 
 #instagram{
@@ -89,6 +90,7 @@ body{
     align-items: center;
     display: flex;
     border-radius: 10%;
+    transition: all 0.5s;
 }
 
 #facebook{
@@ -102,8 +104,26 @@ body{
     align-items: center;
     display: flex;
     border-radius: 10%;
+    transition: all 0.5s;
 }
 
+#instagram:hover{
+    scale: 1.3;
+    rotate: 360deg;
+    
+}
+
+#wpp:hover{
+    scale: 1.3;
+    rotate: 360deg;
+    
+}
+
+#facebook:hover{
+    scale: 1.3;
+    rotate: 360deg;
+    
+}
 /* botao fixado do whatsapp*/
 
 #whatsapp-fixado #wpp-fixado{
@@ -156,6 +176,7 @@ body{
 }
 
 
+<<<<<<< HEAD
 
 /* Main */
 
@@ -165,13 +186,417 @@ main {
 }
 
 
+=======
+/* main */
+
+/* secao apresentacao */
+
+.secao {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    background-image: linear-gradient(180deg, rgba(126,20,20,1) 0%, rgba(253,29,29,1) 5%, rgba(252,176,69,1) 100%);
+}
+
+.home-text{
+    max-width: 37rem;
+}
+
+.home-text h4{
+    font-size: 1.5rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.home-text h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+    margin-bottom: 35px;
+}
+
+.home-text p{
+    margin-bottom: 4rem;
+}
+
+#home-btn{
+    padding: 15px 45px;
+    background: #ff0000;
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+#home-btn:hover{
+    background: var(--white);
+    box-shadow: 0 2px 15px rgb(255, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
+    color: var(--red);
+
+}
+
+#comida-home-img{
+    width: 50%;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    margin-left: 150px;
+}
+
+
+/* secao beneficios da alimentacao */
+
+#secao-dois{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: linear-gradient(180deg, rgba(252,176,69,1) 0%, rgba(239,253,29,1) 5%, rgba(102,252,69,1) 100%);
+}
+
+#btn-fale-conosco{
+    background-color: #009C08;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 1px 2px rgba(0,0,0, 0.35);
+}
+
+#btn-fale-conosco a{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+#lista-elementos{
+    width: 100%;
+    height: 300px;
+    background-size: 45px;
+    border-radius: 1%;
+    box-shadow: 1px 2px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#beneficios-slide{
+    background: white;
+    width: 100%;
+    margin: 80px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-imagem-lista {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 10px;
+}
+
+.beneficios-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#list-bn{
+    display: grid;
+    grid-template-columns: 2fr;
+}
+
+.fale-conosco{
+    padding: 5px 35px;
+    background: green;
+    color: var(--white);
+    border-radius: 50px;
+    font-size: x-large;
+    transition: all 0.5s;
+    align-items: center;
+    margin-left: 20px;
+    }
+
+.fale-conosco:hover{
+    background: var(--white);
+    box-shadow: 0 2px 15px green;
+    border: 2px solid green;
+    color: green;
+}
+
+/* secao por que os clientes nos escolhem */
+
+#grid-fooding-question {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: linear-gradient(180deg, rgba(102,252,69,1) 0%, rgba(29,253,150,1) 5%, rgba(69,151,252,1) 100%);
+}
+
+.foodimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foodimg img{
+    max-width: 500px;
+    width: 45vw;
+}
+
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.q-ans{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.q-ans img{
+    width: 45px;
+}
+
+.q-ans div:first-child{
+    padding: 10px;
+    border-radius: 50%;
+    height: 65px;
+    text-align: center;
+    background-color: white;
+    margin-right: 20px;
+}
+
+.q-ans div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+
+.q-ans div:nth-child(2) p{
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.img-cliente{
+    width: 30px;
+}
+
+.text-cliente{
+    margin: 2px 0 0 2px;
+}
+
+
+
+/* cards de transicao alimentar */
+
+#transicao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    margin-bottom: 40px;
+    background-image: linear-gradient(180deg, rgba(69,151,252,1) 0%, rgba(139,29,253,1) 5%, rgba(239,69,252,1) 100%);
+}
+
+#cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+    gap: 18px;
+    width: 20%;
+    height: 300px;
+    padding: 40px;
+    background-color: #fdf2e1;
+    box-shadow: 0 0 12px 4px rgba(0,0,0, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-heart{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    width: 70px;
+    height: 70px;
+    background-color: #e9a209;
+    right: -10px;
+    top: -10px;
+    border-radius: 0 37.5px 0 42px;
+}
+
+.transicao-description{
+    color: #434343;
+    text-align: center;
+    font-size: 14px;
+}
+
+.fotos-racao{
+    background-size: cover;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    background-image: url(./imagens/racao-peletizada-2.jpg.webp);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.35);
+}
+
+.fotos-comida{
+    background-size: 100%;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    background-image: url(./imagens/bovino\ baixo\ fosforo.png);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.35);
+}
+
+/* secao midia */
+
+#na-midia{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 60px;
+    gap: 20px;
+}
+
+.midias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+    text-align: center;
+    background-image: linear-gradient(180deg, rgba(239,69,252,1), rgba(253,29,156,1) 5%, rgba(252,69,69,1) 100%);
+}
+
+.videos{
+    width: 433px;
+    height: 278px;
+    border-radius: 11px;
+    border: 0px none rgb(0, 0, 0);
+}
+
+/* secao testimonial */
+
+#testimonials{
+    min-height: calc(100vh - 91px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    background-image: linear-gradient(180deg, rgba(252,69,69,1) 0%, rgba(253,29,29,1) 5%, rgba(126,20,20,1) 100%);
+}
+
+#testimonial_chef{
+    width: 500px;
+    height: auto;
+}
+
+.section-title{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--dark);
+}
+
+#testimonials #section-title{
+    font-size: 3rem;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+#testimonials .section-subtitle {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#testimonials_content {
+    width: 50%;
+}
+
+#feedbacks{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.feedback{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-avatar {
+    width: 100px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.feedback-content p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-content p span{
+    color: #e9a209;
+}
+
+.btn-ver-mais{
+    background-color: white;
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 40px;
+    border: 1px solid #1e1c2a;
+    transition: 2s;
+    border-radius: 5px;
+    margin-left: 260px;
+}
+
+.btn-ver-mais:hover{
+    transform: scale(1.2);
+}
+
+.title_button{
+    color: black;
+}
+
+>>>>>>> d73351f5aff5a55f8e0b36a3dcdffa1ae88d2f57
 /* footer */
 
 .footer img{
     width: 20%;
 }
 
-.footer-1 .logo img{
+.footer-conteudo .logo img{
     width: 100px;
 }
 
@@ -186,17 +611,17 @@ main {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
-#footer-2{
+.footer-conteudo{
     text-align: center;
 }
 
-#footer-2 h2{
+.footer-conteudo h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--orange);
     text-decoration: dashed;
 }
 
-#footer-2 img{
+.footer-conteudo img{
     width: 100px;
     margin-bottom: 5px;
 }
@@ -210,8 +635,62 @@ address p{
     color: rgb(212, 212, 212);
 }
 
-#footer-2 h1 {
+.footer-conteudo h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
+/* responsividades */
+
+
+
+
+
+/* features 
+#heart{
+    height: 30px;
+    width: 30px;
+    background-color: #f20044;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #f20044;
+    animation: heart 1s linear infinite;
+    margin-bottom: 20px;
+}
+@keyframes heart {
+    0%{ transform: rotate(-45deg) scale(1.07);}
+    80%{transform: rotate(-45deg) scale(1.0);}
+    100%{transform: rotate(-45deg) scale(0.8);}
+}
+
+#heart::before{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #f20044;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px -10px 90px #f20044;
+}
+
+#heart::after{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #f20044;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 90px #f20044;
+}
+
+*/
+
+#tabela-comida-peso{
+    display: flex;
+}
+
+.foto-tabela{
+    width: 100%;
+}

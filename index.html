@@ -6,6 +6,7 @@
     <title>lp.bestforpet</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/iconsax@1.0.0-beta/dist/iconsax.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -31,41 +32,74 @@
         </header>
 
     <main>
-        <div class="secao">
+        <div id="home">
             <div class="home-text">
                 <h4>Bem vindo a Best for Pet!</h4>
                 <h1>Comida de verdade! Petiscos e dietas personalizadas para cães e gatos.</h1>
                 <a href="https://wa.me/message/O7OXIRLLBCPLM1" id="home-btn" target="_blank">Faça já seu pedido</a>
             </div>
             <div class="home-img">
-                <img src="./imagens/IMG_4379.JPG" id="comida-home-img" alt="suino-essencial">
                 <div id="heart"></div>
             </div>
         </div>
 
-        <div id="secao-dois">
-            <h2 class="section-title">Benefícios da alimentação natural</h2>
-            <div class="grid-imagem-lista">
-                <div id="list-bn">
+            <div class="container swiper">
+                <h2 class="section-title">Beneficios da alimentacao natural</h2>
+                <div class="slider-wrapper">
+                    <div class="card-list swiper-wrapper">
 
-                    <li id="lista-elementos">
-                        <ul>Balanceada e suplementada com vitaminas e minerais</ul>
-                        <ul>Auxilia na prevencao de doencas</ul>
-                        <ul>Maior hidratacao do organismo</ul>
-                        <ul>Reducao das feses e do odor</ul>
-                        <ul>Ajuda no controle de peso</ul>
-                        <ul>Aumenta a logevidade</ul>
-                        <ul>Pelos mais brilhantes</ul>
-                        <ul>Sem conservantes</ul>
-                        <ul>100% nautral</ul>
-                        <ul>Sem corantes</ul>
-                        <ul>Saudavel</ul>
-                    </li>
+                        <div class="card-item swiper-slide">
+                            <img src="./imagens/" class="carousel-img">
+                            <h2 class="beneficios-title">100% Natural</h2>
+                            <p class="beneficios-descricao">balanceada e suplementada com vitaminas e minerais</p>
+                            <button class="fale-conosco-btn">fale conosco</button>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="./imagens/" class="carousel-img">
+                            <h2 class="beneficios-title">saudavel</h2>
+                            <p class="beneficios-descricao">auxilia na prevencao de doencas</p>
+                            <button class="fale-conosco-btn">fale conosco</button>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="./imagens" class="carousel-img">
+                            <h2 class="beneficios-title">sem conservantes</h2>
+                            <p class="beneficios-descricao">aumenta a logenvidade</p>
+                            <button class="fale-conosco-btn">fale conosco</button>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="./imagens/" class="carousel-img">
+                            <h2 class="beneficios-title">sem corantes</h2>
+                            <p class="beneficios-descricao">maior hidratacao do organismos</p>
+                            <button class="fale-conosco-btn">fale conosco</button>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="./imagens" class="carousel-img">
+                            <h2 class="beneficios-title">ajuda no controle de peso</h2>
+                            <p class="beneficios-descricao">breducao de fezes e do odor</p>
+                            <button class="fale-conosco-btn">fale conosco</button>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="./imagens/" class="carousel-img">
+                            <h2 class="beneficios-title">pelos mais brilhantes</h2>
+                            <p class="beneficios-descricao">Pets mais lindos e felizes</p>
+                            <button class="fale-conosco-btn">fale conosco</button>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                        
+                    </div>
                 </div>
-
-                <button id="btn-fale-conosco">
-                    <a href="https://wa.me/message/O7OXIRLLBCPLM1" target="_blank">Fale conosco</a>
-                </button>
+            </div>
+                
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script src="./script.js"></script>
 
             </div>
         </div>
@@ -297,10 +331,9 @@
                     </div>
 
                     <button class="btn-ver-mais">
-                        <a class="title_button" 
+                        <a id="ver-mais-botao" 
                         href="https://www.google.com/search?q=best+for+pets&sca_esv=4f9a9e2d02a8a323&rlz=1C1GCEJ_enBR1028BR1048&ei=bjG7ZrDhGre81sQPm-jUMA&oq=best+&gs_lp=Egxnd3Mtd2l6LXNlcnAiBWJlc3QgKgIIADIKEAAYgAQYQxiKBTIIEAAYgAQYsQMyERAuGIAEGLEDGNEDGIMBGMcBMggQLhiABBixAzIIEAAYgAQYsQMyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATIKEAAYgAQYQxiKBTIIEAAYgAQYsQMyCxAAGIAEGLEDGIMBSP0UUABY-hBwAngBkAEAmAGTAaABuweqAQMwLje4AQPIAQD4AQGYAgmgAoMIwgILEC4YgAQYsQMYgwHCAiAQLhiABBixAxjRAxiDARjHARiXBRjcBBjeBBjgBNgBAcICChAuGIAEGEMYigXCAhAQLhiABBjRAxhDGMcBGIoFwgIFEC4YgATCAgsQLhiABBixAxjUAsICDRAAGIAEGLEDGEYY_wHCAgsQLhiABBjHARivAcICBRAAGIAEwgIZEAAYgAQYsQMYRhj_ARiXBRiMBRjdBNgBAsICDhAuGIAEGMcBGI4FGK8BwgIdEC4YgAQYxwEYjgUYrwEYlwUY3AQY3gQY4ATYAQGYAwC6BgYIARABGBS6BgYIAhABGBOSBwMyLjegB8pu&sclient=gws-wiz-serp#lrd=0x812ae24c8d7a5afd:0x4febf3bc72138983,1,,,,"
                         target="_blank">Ver mais avaliações</a>
-                    </button>
                 </div>
             </div>
         </div>

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*globais*/
 
@@ -182,6 +183,18 @@ body{
 
 /* secao apresentacao */
 
+#home{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    background-image: url(./imagens/cachorrogato.webp);
+    background-size: cover;
+}
+
 .secao {
     width: 100%;
     height: 100vh;
@@ -190,18 +203,18 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 0px 10%;
-    background-image: linear-gradient(180deg, rgba(126,20,20,1) 0%, rgba(253,29,29,1) 5%, rgba(252,176,69,1) 100%);
-}
+   }
 
 .home-text{
     max-width: 37rem;
 }
 
 .home-text h4{
-    font-size: 1.5rem;
+    margin-top: 30px;
+    font-size: 2.1rem;
     color: var(--red);
     margin-bottom: 1rem;
-    color: white;
+    color: var(--red);
 }
 
 .home-text h1{
@@ -242,76 +255,84 @@ body{
 
 /* secao beneficios da alimentacao */
 
-#secao-dois{
+.container{
     display: grid;
     grid-template-columns: 1fr;
-    background-image: linear-gradient(180deg, rgba(252,176,69,1) 0%, rgba(239,253,29,1) 5%, rgba(102,252,69,1) 100%);
-}
-
-#btn-fale-conosco{
-    background-color: #009C08;
-    width: 150px;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 1px 2px 1px 2px rgba(0,0,0, 0.35);
-}
-
-#btn-fale-conosco a{
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2rem;
-}
-
-#lista-elementos{
-    width: 100%;
-    height: 300px;
-    background-size: 45px;
-    border-radius: 1%;
-    box-shadow: 1px 2px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-#beneficios-slide{
-    background: white;
-    width: 100%;
-    margin: 80px 0;
-    padding: 20px;
-    text-align: center;
-}
-
-.grid-imagem-lista {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-bottom: 10px;
-}
-
-.beneficios-imagem {
-    display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(2, 33, 101);
 }
 
-#list-bn{
-    display: grid;
-    grid-template-columns: 2fr;
-}
-
-.fale-conosco{
-    padding: 5px 35px;
-    background: green;
-    color: var(--white);
-    border-radius: 50px;
-    font-size: x-large;
-    transition: all 0.5s;
+.card-list .card-item{
+    color: white;
+    user-select: none;
+    padding: 35px;
+    display: flex;
+    border-radius: 8px;
     align-items: center;
-    margin-left: 20px;
-    }
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(30px);
+}
 
-.fale-conosco:hover{
-    background: var(--white);
-    box-shadow: 0 2px 15px green;
-    border: 2px solid green;
-    color: green;
+.card-list .card-item .carousel-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    border: 3px solid #fff;
+    padding: 4px;
+}
+
+.card-list .card-item .beneficios-descricao{
+    font-size: 1.15rem;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 14px 0 40px;
+}
+
+.card-list .card-item .fale-conosco-btn{
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    color: #030728;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+    font-family: Montserrat;
+}
+
+.card-list .card-item .fale-conosco-btn:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.slider-wrapper{
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+}
+
+.slider-wrapper .swipper-pagination-bullet{
+    background: #fff;
+    height: 15px;
+    width: 15px;
+}
+
+.slider-wrapper .swiper-slide-button{
+    color: #fff;
+    margin-top: -50px;
+    transition: 0.2s ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover{
+    color: #4658ff;
 }
 
 /* secao por que os clientes nos escolhem */
@@ -319,8 +340,9 @@ body{
 #grid-fooding-question {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-image: linear-gradient(180deg, rgba(102,252,69,1) 0%, rgba(29,253,150,1) 5%, rgba(69,151,252,1) 100%);
-}
+    /*background-image: linear-gradient(180deg, rgba(102,252,69,1) 0%, rgba(29,253,150,1) 5%, rgba(69,151,252,1) 100%);
+*/
+    }
 
 .foodimg{
     display: flex;
@@ -394,8 +416,9 @@ body{
     justify-content: center;
     min-height: 60vh;
     margin-bottom: 40px;
-    background-image: linear-gradient(180deg, rgba(69,151,252,1) 0%, rgba(139,29,253,1) 5%, rgba(239,69,252,1) 100%);
-}
+   /* background-image: linear-gradient(180deg, rgba(69,151,252,1) 0%, rgba(139,29,253,1) 5%, rgba(239,69,252,1) 100%);
+*/
+   }
 
 #cards{
     width: 100%;
@@ -474,8 +497,10 @@ body{
     grid-template-columns: 1fr 1fr;
     margin-top: 10px;
     text-align: center;
-    background-image: linear-gradient(180deg, rgba(239,69,252,1), rgba(253,29,156,1) 5%, rgba(252,69,69,1) 100%);
-}
+    /*background-image: linear-gradient(180deg, rgba(239,69,252,1), rgba(253,29,156,1) 5%, rgba(252,69,69,1) 100%);
+*/
+    margin-bottom: 20px;
+    }
 
 .videos{
     width: 433px;
@@ -492,8 +517,9 @@ body{
     align-items: center;
     justify-content: center;
     gap: 48px;
-    background-image: linear-gradient(180deg, rgba(252,69,69,1) 0%, rgba(253,29,29,1) 5%, rgba(126,20,20,1) 100%);
-}
+    /*background-image: linear-gradient(180deg, rgba(252,69,69,1) 0%, rgba(253,29,29,1) 5%, rgba(126,20,20,1) 100%);
+*/
+    }
 
 #testimonial_chef{
     width: 500px;
@@ -501,7 +527,7 @@ body{
 }
 
 .section-title{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -576,7 +602,7 @@ body{
     transform: scale(1.2);
 }
 
-.title_button{
+#ver-mais-botao{
     color: black;
 }
 
@@ -632,7 +658,15 @@ address p{
 
 /* responsividades */
 
+@media (max-width: 768px){
+    .slider-wrapper{
+        margin: 0 10px 40px;
+    }
 
+    .slider-wrapper .swiper-slide-button{
+        display: none;
+    }
+}
 
 
 

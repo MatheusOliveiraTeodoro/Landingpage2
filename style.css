@@ -38,7 +38,7 @@ body{
     background: #7e1414;
     transition: all 0.5s;
     position: fixed;
-    z-index: 3;
+    z-index: 1000;
 }
 
 #cabecalho ul{

@@ -147,7 +147,7 @@ body{
     z-index: 9999;
     width: 46px;
     height: 42px;
-    line-height: 50px;
+    line-height: 35px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -267,6 +267,7 @@ body{
     margin-bottom: 40px;
     border: 3px solid #fff;
     padding: 4px;
+    background-size: cover;
 }
 .card-list .card-item .beneficios-descricao{
     font-size: 1.15rem;
@@ -314,11 +315,13 @@ body{
 .beneficios-title{
     font-family:  Poppins;
     text-shadow: 0 5px 10px #0004;
+    
 }
 /* secao por que os clientes nos escolhem */
 #grid-fooding-question {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
     /*background-image: linear-gradient(180deg, rgba(102,252,69,1) 0%, rgba(29,253,150,1) 5%, rgba(69,151,252,1) 100%);
 */
 }
@@ -731,7 +734,6 @@ body{
     align-items: center;
     justify-content: center;
     margin-bottom: 5px;
-    margin-top: 60px;
     gap: 20px;
 }
 .midias{
@@ -764,11 +766,12 @@ body{
     height: auto;
 }
 .section-title{
+    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
     font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: var(--dark);
+    color: var(--orange);
 }
 #testimonials #section-title{
     font-size: 3rem;

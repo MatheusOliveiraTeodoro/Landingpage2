@@ -183,7 +183,6 @@ body{
 /* main */
 
 /* secao apresentacao */
-
 #home{
     width: 100%;
     height: 100vh;
@@ -195,7 +194,6 @@ body{
     background-image: url(./imagens/cachorrogato.webp);
     background-size: cover;
 }
-
 .secao {
     width: 100%;
     height: 100vh;
@@ -205,11 +203,9 @@ body{
     justify-content: space-between;
     padding: 0px 10%;
    }
-
 .home-text{
     max-width: 37rem;
 }
-
 .home-text h4{
     margin-top: 30px;
     font-size: 2.1rem;
@@ -217,18 +213,15 @@ body{
     margin-bottom: 1rem;
     color: var(--red);
 }
-
 .home-text h1{
     font-size: 2rem;
     margin-bottom: 1rem;
     line-height: 4rem;
     margin-bottom: 35px;
 }
-
 .home-text p{
     margin-bottom: 4rem;
 }
-
 #home-btn{
     padding: 15px 45px;
     background: #ff0000;
@@ -237,7 +230,6 @@ body{
     font-weight: 700;
     transition: all 0.5s;
 }
-
 #home-btn:hover{
     background: var(--white);
     box-shadow: 0 2px 15px rgb(255, 0, 0);
@@ -245,17 +237,7 @@ body{
     color: var(--red);
 
 }
-
-#comida-home-img{
-    width: 50%;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    margin-left: 150px;
-}
-
-
 /* secao beneficios da alimentacao */
-
 .container{
     display: grid;
     grid-template-columns: 1fr;
@@ -264,7 +246,6 @@ body{
     min-height: 100vh;
     background-color: rgb(2, 33, 101);
 }
-
 .card-list .card-item{
     color: white;
     user-select: none;
@@ -279,7 +260,6 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(30px);
 }
-
 .card-list .card-item .carousel-img{
     width: 150px;
     height: 150px;
@@ -288,14 +268,12 @@ body{
     border: 3px solid #fff;
     padding: 4px;
 }
-
 .card-list .card-item .beneficios-descricao{
     font-size: 1.15rem;
     color: #e3e3e3;
     font-weight: 500;
     margin: 14px 0 40px;
 }
-
 .card-list .card-item .fale-conosco-btn{
     font-size: 1.25rem;
     padding: 10px 35px;
@@ -305,79 +283,72 @@ body{
     cursor: pointer;
     border: 1px solid transparent;
     transition: 0.2s ease;
-    font-family: Montserrat;
 }
-
 .card-list .card-item .fale-conosco-btn:hover{
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid #fff;
     color: #fff;
 }
-
 .slider-wrapper{
     overflow: hidden;
     max-width: 1200px;
     margin: 0 70px 55px;
 }
-
 .slider-wrapper .swipper-pagination-bullet{
     background: #fff;
     height: 15px;
     width: 15px;
 }
-
 .slider-wrapper .swiper-slide-button{
     color: #fff;
     margin-top: -50px;
     transition: 0.2s ease;
 }
-
 .slider-wrapper .swiper-slide-button:hover{
     color: #4658ff;
 }
-
+.fale-conosco-btn a{
+    color: black;
+    font-family: Montserrat;
+}
+.beneficios-title{
+    font-family:  Poppins;
+    text-shadow: 0 5px 10px #0004;
+}
 /* secao por que os clientes nos escolhem */
-
 #grid-fooding-question {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /*background-image: linear-gradient(180deg, rgba(102,252,69,1) 0%, rgba(29,253,150,1) 5%, rgba(69,151,252,1) 100%);
 */
-    }
-
+}
 .foodimg{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .foodimg img{
     max-width: 500px;
     width: 45vw;
 }
-
 .question{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .question h2{
     font-size: 35px;
     margin-bottom: 15px;
 }
-
 .q-ans{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 15px 0;
 }
-
 .q-ans img{
     width: 45px;
 }
-
 .q-ans div:first-child{
     padding: 10px;
     border-radius: 50%;
@@ -386,28 +357,22 @@ body{
     background-color: white;
     margin-right: 20px;
 }
-
 .q-ans div:nth-child(2){
     display: flex;
     flex-direction: column;
 }
-
 .q-ans div:nth-child(2) p{
     margin-top: 10px;
     font-size: 13px;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
-
 .img-cliente{
     width: 30px;
 }
-
 .text-cliente{
     margin: 2px 0 0 2px;
 }
-
 /* cards de transicao alimentar */
-
 #transicao {
     display: flex;
     flex-direction: column;
@@ -417,8 +382,7 @@ body{
     margin-bottom: 40px;
    /* background-image: linear-gradient(180deg, rgba(69,151,252,1) 0%, rgba(139,29,253,1) 5%, rgba(239,69,252,1) 100%);
 */
-   }
-
+}
 #cards{
     width: 100%;
     display: flex;
@@ -426,7 +390,6 @@ body{
     gap: 24px;
     margin-top: 32px;
 }
-
 .card{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -440,7 +403,6 @@ body{
     position: relative;
     overflow: hidden;
 }
-
 .card-heart{
     position: absolute;
     display: flex;
@@ -454,13 +416,11 @@ body{
     top: -10px;
     border-radius: 0 37.5px 0 42px;
 }
-
 .transicao-description{
     color: #434343;
     text-align: center;
     font-size: 14px;
 }
-
 .fotos-racao{
     background-size: cover;
     border-radius: 100%;
@@ -469,7 +429,6 @@ body{
     background-image: url(./imagens/racao-peletizada-2.jpg.webp);
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.35);
 }
-
 .fotos-comida{
     background-size: 100%;
     border-radius: 100%;
@@ -478,9 +437,7 @@ body{
     background-image: url(./imagens/bovino\ baixo\ fosforo.png);
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.35);
 }
-
 /* tabela comida por peso */
-
 /* carousel */
 .carousel{
     width: 100%;
@@ -514,7 +471,7 @@ body{
     font-weight: bold;
     letter-spacing: 10px;
     color: red;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .carousel .list .item .content .title,
 .carousel .list .item .content .topic{
@@ -747,31 +704,27 @@ body{
         font-size: 30px;
     }
 }
-
 .ver-mais-btn{
     cursor: pointer;
 }
-
 .navegar-btn{
     cursor: pointer;
 }
-
 .btn-nav-title{
     color: white;
 }
-
+.btn-nav-title2{
+    color: black;
+}
 #prev{
     margin-left: 150px;
     margin-top: 35px;
 }
-
 #next{
     
     margin-top: 35px;
 }
-
 /* secao midia */
-
 #na-midia{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -781,7 +734,6 @@ body{
     margin-top: 60px;
     gap: 20px;
 }
-
 .midias{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -790,17 +742,14 @@ body{
     /*background-image: linear-gradient(180deg, rgba(239,69,252,1), rgba(253,29,156,1) 5%, rgba(252,69,69,1) 100%);
 */
     margin-bottom: 20px;
-    }
-
+}
 .videos{
     width: 433px;
     height: 278px;
     border-radius: 11px;
     border: 0px none rgb(0, 0, 0);
 }
-
-/* secao testimonial */
-
+/*secao testimonial*/
 #testimonials{
     min-height: calc(100vh - 91px);
     display: flex;
@@ -809,13 +758,11 @@ body{
     gap: 48px;
     /*background-image: linear-gradient(180deg, rgba(252,69,69,1) 0%, rgba(253,29,29,1) 5%, rgba(126,20,20,1) 100%);
 */
-    }
-
+}
 #testimonial_chef{
     width: 500px;
     height: auto;
 }
-
 .section-title{
     margin-bottom: 20px;
     text-align: center;
@@ -823,7 +770,6 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: var(--dark);
 }
-
 #testimonials #section-title{
     font-size: 3rem;
     color: black;
@@ -832,17 +778,13 @@ body{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-
-
 #testimonials .section-subtitle {
     font-size: 2rem;
     text-align: center;
 }
-
 #testimonials_content {
     width: 50%;
 }
-
 #feedbacks{
     display: flex;
     flex-direction: column;
@@ -850,7 +792,6 @@ body{
     margin-bottom: 40px;
     margin-top: 30px;
 }
-
 .feedback{
     display: flex;
     align-items: center;
@@ -860,23 +801,19 @@ body{
     border-radius: 12px;
     box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
 }
-
 .feedback-avatar {
     width: 100px;
     height: 50px;
     border-radius: 100%;
     object-fit: cover;
 }
-
 .feedback-content p{
     display: flex;
     justify-content: space-between;
 }
-
 .feedback-content p span{
     color: #e9a209;
 }
-
 .btn-ver-mais{
     background-color: white;
     box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
@@ -887,25 +824,19 @@ body{
     border-radius: 5px;
     margin-left: 260px;
 }
-
 .btn-ver-mais:hover{
     transform: scale(1.2);
 }
-
 #ver-mais-botao{
     color: black;
 }
-
 /* footer */
-
 .footer img{
     width: 20%;
 }
-
 .footer-conteudo .logo img{
     width: 100px;
 }
-
 .footer{
     border-top: 1px solid white;
     background-color: #7e1414;
@@ -916,38 +847,30 @@ body{
     align-items: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
-
 .footer-conteudo{
     text-align: center;
 }
-
 .footer-conteudo h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--orange);   
     text-decoration: dashed;
 }
-
 .footer-conteudo img{
     width: 100px;
     margin-bottom: 5px;
 }
-
 .bfp-site{
     color: black;
 }
-
 address p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(212, 212, 212);
 }
-
 .footer-conteudo h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
-
 /* responsividades */
-
 @media (max-width: 768px){
     .slider-wrapper{
         margin: 0 10px 40px;
@@ -956,52 +879,4 @@ address p{
     .slider-wrapper .swiper-slide-button{
         display: none;
     }
-}
-
-
-
-/* features 
-#heart{
-    height: 30px;
-    width: 30px;
-    background-color: #f20044;
-    position: relative;
-    transform: rotate(-45deg);
-    box-shadow: -10px 10px 90px #f20044;
-    animation: heart 1s linear infinite;
-    margin-bottom: 20px;
-}
-@keyframes heart {
-    0%{ transform: rotate(-45deg) scale(1.07);}
-    80%{transform: rotate(-45deg) scale(1.0);}
-    100%{transform: rotate(-45deg) scale(0.8);}
-}
-
-#heart::before{
-    content: '';
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    background-color: #f20044;
-    top: -50%;
-    border-radius: 50px;
-    box-shadow: -10px -10px 90px #f20044;
-}
-
-#heart::after{
-    content: '';
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    background-color: #f20044;
-    right: -50%;
-    border-radius: 50px;
-    box-shadow: 10px 10px 90px #f20044;
-}
-
-*/
-
-
-.foto-tabela{
-    width: 100%;
 }

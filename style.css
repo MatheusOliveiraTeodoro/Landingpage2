@@ -754,6 +754,7 @@ body {
   /*background-image: linear-gradient(180deg, rgba(239,69,252,1), rgba(253,29,156,1) 5%, rgba(252,69,69,1) 100%);
 */
   margin-bottom: 20px;
+  
 }
 .videos {
   width: 433px;
@@ -768,6 +769,7 @@ body {
   font-size: 30px;
   font-family: 'Poppins';
   color: var(--orange);
+  font-size: 40px;
 }
 
 /*transicao alimentar*/
@@ -780,6 +782,18 @@ body {
   font-family: 'Poppins';
 }
 
+.midias h1{
+  font-family: 'Source sans';
+}
+.midias h4{
+  font-family: 'Source sans';
+  font-size: 1.3rem;
+}
+.midias p{
+  font-family: 'Poppins';
+  font-size: 20px;
+}
+/* transicao alimentar*/
 .capsula {
   width: 100%;
   height: 100vh;
@@ -903,6 +917,7 @@ input:checked + label .description {
 #testimonials .section-subtitle {
   font-size: 2rem;
   text-align: center;
+  font-family: 'Poppins';
 }
 #testimonials_content {
   width: 50%;
@@ -932,6 +947,8 @@ input:checked + label .description {
 .feedback-content p {
   display: flex;
   justify-content: space-between;
+  font-family: 'Source sans';
+  font-size: 1rem;
 }
 .feedback-content p span {
   color: #e9a209;
@@ -939,18 +956,21 @@ input:checked + label .description {
 .btn-ver-mais {
   background-color: rgb(250, 242, 250);
   box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
-  width: 200px;
+  width: 150px;
   height: 40px;
   border: 1px solid #1e1c2a;
   transition: 2s;
   border-radius: 5px;
-  margin-left: 230px;
+  margin-left: 220px;
 }
 .btn-ver-mais:hover {
   transform: scale(1.2);
 }
 #ver-mais-botao {
   color: black;
+  font-family: 'Source sans';
+  font-weight: bold;
+  font-size: 14px;
 }
 /* footer */
 #footer-logo{
@@ -984,6 +1004,9 @@ footer{
 
 #footer_contacts h1{
   margin-bottom: 0.75rem;
+}
+#footer_contacts p{
+  font-family: 'Poppins';
 }
 
 #footer_social_media{
@@ -1056,6 +1079,11 @@ width: 40%;
   font-family: 'Inter', sans-serif;
 }
 
+#footer_subscribe h3{
+  font-family: 'Source sans';
+  font-size: 22px;
+}
+
 
 #input_group input{
   all: unset;
@@ -1091,6 +1119,10 @@ width: 40%;
   font-size: 13px;
   color: #ff945b;
   font-family: 'Inter', sans-serif;
+}
+.footer-list h3{
+  font-family: 'Source sans';
+  font-size: 22px;
 }
 /* responsividades */
 

@@ -44,7 +44,7 @@ body {
   transition: all 0.5s;
   position: fixed;
   z-index: 1000;
-  height: 20%;
+  height: 15%;
 }
 .logo{
   width: 40%;

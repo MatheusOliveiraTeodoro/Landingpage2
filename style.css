@@ -13,6 +13,7 @@
   font-family: "Mochiy Pop One", sans-serif;
   list-style: none;
   text-decoration: none;
+  
 }
 
 :root {
@@ -38,7 +39,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 40px;
   box-shadow: 0 0.1rem 0.5rem #ccc;
   width: 100%;
   background: #7e1414;
@@ -48,7 +48,7 @@ body {
   height: 15%;
 }
 .logo{
-  width: 40%;
+  width: 100px;
 }
 #logo-header{
   width: 100px;
@@ -218,8 +218,13 @@ body {
   grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 45vh;
   background-color: #ffd4b1;
+}
+#container-car-1{
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
 .card-list .card-item {
   color: white;
@@ -243,6 +248,7 @@ body {
   border: 3px solid #fff;
   padding: 4px;
   background-size: cover;
+  object-fit: cover;
 }
 
 .card-list .card-item .beneficios-descricao {
@@ -254,7 +260,7 @@ body {
 #fale-conosco-btn {
   font-size: 1.25rem;
   padding: 10px 35px;
-  background: linear-gradient(90deg, rgba(0,255,237,1) 0%, rgba(0,155,162,1) 40%, rgba(0,4,135,1) 100%);
+  background: linear-gradient(90deg, rgb(255, 153, 0) 0%, rgba(255, 179, 47, 0.808) 40%, rgba(255, 128, 55, 0.844) 100%);
   border-radius: 6px;
   font-weight: 500;
   cursor: pointer;
@@ -300,6 +306,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 20px;
+  background-color: burlywood;
   /*background: linear-gradient(180deg, rgba(2,33,101,1) 0%, rgb(252, 202, 126) 50%, rgb(255, 255, 228) 100%);
     */
 }
@@ -777,7 +784,7 @@ body {
   text-align: center;
   justify-content: center;
   color: var(--orange);
-  margin-bottom: -40px;
+  margin-bottom: -70px;
   font-size: 2rem;
   font-family: 'Poppins';
 }
@@ -800,6 +807,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #ffd4b1;
 }
 .caixa {
   height: 400px;
@@ -1184,9 +1192,13 @@ width: 40%;
 
 
 @media screen and (max-width:426) {
+
   #footer_content{
       grid-template-columns: repeat(1, 1fr);
       padding: 3rem 2rem;
+  }
+  .caixa{
+    display: block;
   }
 }
 
@@ -1241,5 +1253,12 @@ width: 40%;
   100% {
     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
     opacity: 50%;
+  }
+}
+
+@media (max-width:1920px){
+  .capsula{
+    height: 100vh;
+    margin-bottom: 200px;
   }
 }
